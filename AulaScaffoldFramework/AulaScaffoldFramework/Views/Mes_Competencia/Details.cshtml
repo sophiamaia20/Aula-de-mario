@@ -1,0 +1,26 @@
+﻿@model AulaScaffoldFramework.Models.MES_COMPETENCIA
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>MES_COMPETENCIA</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ABERTO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ABERTO)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

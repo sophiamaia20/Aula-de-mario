@@ -1,0 +1,69 @@
+﻿@model IEnumerable<AulaScaffoldFramework.Models.PRODUTO>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ID_CLAS)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ID_UN_MED)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DESCRICAO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OBSERVACAO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ESTOQUE_MIN)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PERECIVEL)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.QTD_EMBALAGEM)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ID_CLAS)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ID_UN_MED)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DESCRICAO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OBSERVACAO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ESTOQUE_MIN)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PERECIVEL)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.QTD_EMBALAGEM)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID_PRO }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID_PRO }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID_PRO })
+        </td>
+    </tr>
+}
+
+</table>

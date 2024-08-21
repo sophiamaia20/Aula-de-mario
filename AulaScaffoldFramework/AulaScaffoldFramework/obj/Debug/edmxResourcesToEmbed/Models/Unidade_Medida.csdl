@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="xAlmoxarifadoModel7" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="UNIDADE_MEDIDA">
+    <Key>
+      <PropertyRef Name="ID_UN_MED" />
+    </Key>
+    <Property Name="ID_UN_MED" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NOME_UN_MED" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="SIGLA" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="xAlmoxarifadoEntities7" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="UNIDADE_MEDIDA" EntityType="Self.UNIDADE_MEDIDA" />
+  </EntityContainer>
+</Schema>

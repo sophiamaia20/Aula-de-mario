@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="xAlmoxarifadoModel2StoreContainer" CdmEntityContainer="xAlmoxarifadoEntities2">
+    <EntitySetMapping Name="GRUPO">
+      <EntityTypeMapping TypeName="xAlmoxarifadoModel2.GRUPO">
+        <MappingFragment StoreEntitySet="GRUPO">
+          <ScalarProperty Name="ID_GRU" ColumnName="ID_GRU" />
+          <ScalarProperty Name="NOME_GRU" ColumnName="NOME_GRU" />
+          <ScalarProperty Name="SUGESTAO_GRU" ColumnName="SUGESTAO_GRU" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

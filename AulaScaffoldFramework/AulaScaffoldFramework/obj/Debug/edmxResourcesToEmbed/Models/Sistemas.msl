@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="xAlmoxarifadoModel10StoreContainer" CdmEntityContainer="xAlmoxarifadoEntities10">
+    <EntitySetMapping Name="SISTEMAS">
+      <EntityTypeMapping TypeName="xAlmoxarifadoModel10.SISTEMAS">
+        <MappingFragment StoreEntitySet="SISTEMAS">
+          <ScalarProperty Name="SISID" ColumnName="SISID" />
+          <ScalarProperty Name="SISDESCRICAO" ColumnName="SISDESCRICAO" />
+          <ScalarProperty Name="SISCHAVE" ColumnName="SISCHAVE" />
+          <ScalarProperty Name="DA" ColumnName="DA" />
+          <ScalarProperty Name="DU" ColumnName="DU" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

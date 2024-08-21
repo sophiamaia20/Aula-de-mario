@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="xAlmoxarifadoModel12StoreContainer" CdmEntityContainer="xAlmoxarifadoEntities12">
+    <EntitySetMapping Name="TIPO_NOTA">
+      <EntityTypeMapping TypeName="xAlmoxarifadoModel12.TIPO_NOTA">
+        <MappingFragment StoreEntitySet="TIPO_NOTA">
+          <ScalarProperty Name="ID_TIPO_NOTA" ColumnName="ID_TIPO_NOTA" />
+          <ScalarProperty Name="DESCRICAO_TIPO_NOTA" ColumnName="DESCRICAO_TIPO_NOTA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

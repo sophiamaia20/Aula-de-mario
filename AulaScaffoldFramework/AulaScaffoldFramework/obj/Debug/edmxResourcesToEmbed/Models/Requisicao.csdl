@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="xAlmoxarifadoModel11" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="REQUISICAO">
+    <Key>
+      <PropertyRef Name="ID_REQ" />
+    </Key>
+    <Property Name="ID_REQ" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_CLI" Type="Int32" Nullable="false" />
+    <Property Name="TOTAL_REQ" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="QTD_ITEN" Type="Int32" />
+    <Property Name="DATA_REQ" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ANO" Type="Int32" Nullable="false" />
+    <Property Name="MES" Type="Int32" Nullable="false" />
+    <Property Name="ID_SEC" Type="Int32" Nullable="false" />
+    <Property Name="ID_SET" Type="Int32" />
+    <Property Name="OBSERVACAO" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="xAlmoxarifadoEntities11" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="REQUISICAO" EntityType="Self.REQUISICAO" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="xAlmoxarifadoModelStoreContainer" CdmEntityContainer="xAlmoxarifadoEntities">
+    <EntitySetMapping Name="PRODUTO">
+      <EntityTypeMapping TypeName="xAlmoxarifadoModel.PRODUTO">
+        <MappingFragment StoreEntitySet="PRODUTO">
+          <ScalarProperty Name="ID_PRO" ColumnName="ID_PRO" />
+          <ScalarProperty Name="ID_CLAS" ColumnName="ID_CLAS" />
+          <ScalarProperty Name="ID_UN_MED" ColumnName="ID_UN_MED" />
+          <ScalarProperty Name="DESCRICAO" ColumnName="DESCRICAO" />
+          <ScalarProperty Name="OBSERVACAO" ColumnName="OBSERVACAO" />
+          <ScalarProperty Name="ESTOQUE_MIN" ColumnName="ESTOQUE_MIN" />
+          <ScalarProperty Name="PERECIVEL" ColumnName="PERECIVEL" />
+          <ScalarProperty Name="QTD_EMBALAGEM" ColumnName="QTD_EMBALAGEM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

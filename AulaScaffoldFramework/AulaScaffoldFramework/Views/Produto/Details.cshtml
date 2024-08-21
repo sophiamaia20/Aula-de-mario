@@ -1,0 +1,74 @@
+﻿@model AulaScaffoldFramework.Models.PRODUTO
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PRODUTO</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ID_CLAS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ID_CLAS)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ID_UN_MED)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ID_UN_MED)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DESCRICAO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DESCRICAO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OBSERVACAO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OBSERVACAO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ESTOQUE_MIN)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ESTOQUE_MIN)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PERECIVEL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PERECIVEL)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.QTD_EMBALAGEM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.QTD_EMBALAGEM)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID_PRO }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

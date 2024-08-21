@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="xAlmoxarifadoModel7StoreContainer" CdmEntityContainer="xAlmoxarifadoEntities7">
+    <EntitySetMapping Name="UNIDADE_MEDIDA">
+      <EntityTypeMapping TypeName="xAlmoxarifadoModel7.UNIDADE_MEDIDA">
+        <MappingFragment StoreEntitySet="UNIDADE_MEDIDA">
+          <ScalarProperty Name="ID_UN_MED" ColumnName="ID_UN_MED" />
+          <ScalarProperty Name="NOME_UN_MED" ColumnName="NOME_UN_MED" />
+          <ScalarProperty Name="SIGLA" ColumnName="SIGLA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

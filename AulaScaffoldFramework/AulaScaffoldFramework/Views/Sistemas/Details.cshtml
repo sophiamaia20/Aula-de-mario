@@ -1,0 +1,34 @@
+﻿@model AulaScaffoldFramework.Models.SISTEMAS
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>SISTEMAS</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DU)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DU)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

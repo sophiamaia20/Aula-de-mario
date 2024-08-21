@@ -1,0 +1,26 @@
+﻿@model AulaScaffoldFramework.Models.TIPO_NOTA
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TIPO_NOTA</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DESCRICAO_TIPO_NOTA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DESCRICAO_TIPO_NOTA)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID_TIPO_NOTA }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

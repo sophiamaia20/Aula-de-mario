@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="xAlmoxarifadoModel12" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="TIPO_NOTA">
+    <Key>
+      <PropertyRef Name="ID_TIPO_NOTA" />
+    </Key>
+    <Property Name="ID_TIPO_NOTA" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DESCRICAO_TIPO_NOTA" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="xAlmoxarifadoEntities12" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="TIPO_NOTA" EntityType="Self.TIPO_NOTA" />
+  </EntityContainer>
+</Schema>

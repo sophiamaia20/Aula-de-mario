@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="xAlmoxarifadoModel5StoreContainer" CdmEntityContainer="xAlmoxarifadoEntities5">
+    <EntitySetMapping Name="SETOR">
+      <EntityTypeMapping TypeName="xAlmoxarifadoModel5.SETOR">
+        <MappingFragment StoreEntitySet="SETOR">
+          <ScalarProperty Name="ID_SET" ColumnName="ID_SET" />
+          <ScalarProperty Name="ID_SEC" ColumnName="ID_SEC" />
+          <ScalarProperty Name="NOME_SET" ColumnName="NOME_SET" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

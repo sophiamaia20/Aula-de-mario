@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="xAlmoxarifadoModel9StoreContainer" CdmEntityContainer="xAlmoxarifadoEntities9">
+    <EntitySetMapping Name="MES_COMPETENCIA">
+      <EntityTypeMapping TypeName="xAlmoxarifadoModel9.MES_COMPETENCIA">
+        <MappingFragment StoreEntitySet="MES_COMPETENCIA">
+          <ScalarProperty Name="MES" ColumnName="MES" />
+          <ScalarProperty Name="ANO" ColumnName="ANO" />
+          <ScalarProperty Name="ABERTO" ColumnName="ABERTO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

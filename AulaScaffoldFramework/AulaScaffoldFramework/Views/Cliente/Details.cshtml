@@ -1,0 +1,50 @@
+﻿@model AulaScaffoldFramework.Models.CLIENTE
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CLIENTE</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ID_SEC)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ID_SEC)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NOME_CLI)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NOME_CLI)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CARGO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CARGO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PORTARIA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PORTARIA)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID_CLI }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

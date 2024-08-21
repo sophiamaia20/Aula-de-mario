@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="xAlmoxarifadoModel8.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'xAlmoxarifado.dbo.EMPRESA' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="EMPRESA">
+    <Key>
+      <PropertyRef Name="ID_EMPRESA" />
+    </Key>
+    <Property Name="ID_EMPRESA" Type="int" Nullable="false" />
+    <Property Name="NOME_EMPRESA" Type="varchar" MaxLength="50" />
+    <Property Name="ENDERECO_EMPRESA" Type="varchar" MaxLength="120" />
+    <Property Name="BAIRRO_EMPRESA" Type="varchar" MaxLength="30" />
+    <Property Name="CIDADE_EMPRESA" Type="varchar" MaxLength="30" />
+    <Property Name="UF_EMPRESA" Type="varchar" MaxLength="50" />
+    <Property Name="CEP_EMPRESA" Type="varchar" MaxLength="14" />
+    <Property Name="CNPJ_EMPRESA" Type="varchar" MaxLength="22" />
+    <Property Name="FONE_EMRESA" Type="varchar" MaxLength="20" />
+    <Property Name="LOGO_EMPRESA" Type="image" />
+  </EntityType>
+  <EntityContainer Name="xAlmoxarifadoModel8StoreContainer">
+    <EntitySet Name="EMPRESA" EntityType="Self.EMPRESA" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [EMPRESA].[ID_EMPRESA] AS [ID_EMPRESA], 
+    [EMPRESA].[NOME_EMPRESA] AS [NOME_EMPRESA], 
+    [EMPRESA].[ENDERECO_EMPRESA] AS [ENDERECO_EMPRESA], 
+    [EMPRESA].[BAIRRO_EMPRESA] AS [BAIRRO_EMPRESA], 
+    [EMPRESA].[CIDADE_EMPRESA] AS [CIDADE_EMPRESA], 
+    [EMPRESA].[UF_EMPRESA] AS [UF_EMPRESA], 
+    [EMPRESA].[CEP_EMPRESA] AS [CEP_EMPRESA], 
+    [EMPRESA].[CNPJ_EMPRESA] AS [CNPJ_EMPRESA], 
+    [EMPRESA].[FONE_EMRESA] AS [FONE_EMRESA], 
+    [EMPRESA].[LOGO_EMPRESA] AS [LOGO_EMPRESA]
+    FROM [dbo].[EMPRESA] AS [EMPRESA]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

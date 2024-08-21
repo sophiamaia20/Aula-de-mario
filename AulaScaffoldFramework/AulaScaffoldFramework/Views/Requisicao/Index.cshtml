@@ -1,0 +1,81 @@
+﻿@model IEnumerable<AulaScaffoldFramework.Models.REQUISICAO>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ID_CLI)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TOTAL_REQ)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.QTD_ITEN)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DATA_REQ)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ANO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MES)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ID_SEC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ID_SET)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OBSERVACAO)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ID_CLI)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TOTAL_REQ)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.QTD_ITEN)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DATA_REQ)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ANO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MES)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ID_SEC)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ID_SET)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OBSERVACAO)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID_REQ }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID_REQ }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID_REQ })
+        </td>
+    </tr>
+}
+
+</table>

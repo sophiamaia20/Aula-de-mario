@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="xAlmoxarifadoModel5" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="SETOR">
+    <Key>
+      <PropertyRef Name="ID_SET" />
+    </Key>
+    <Property Name="ID_SET" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_SEC" Type="Int32" />
+    <Property Name="NOME_SET" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="xAlmoxarifadoEntities5" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="SETOR" EntityType="Self.SETOR" />
+  </EntityContainer>
+</Schema>

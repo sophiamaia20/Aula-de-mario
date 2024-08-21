@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="xAlmoxarifadoModel4" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="CLIENTE">
+    <Key>
+      <PropertyRef Name="ID_CLI" />
+    </Key>
+    <Property Name="ID_CLI" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_SEC" Type="Int32" />
+    <Property Name="NOME_CLI" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CARGO" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="PORTARIA" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="xAlmoxarifadoEntities4" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CLIENTE" EntityType="Self.CLIENTE" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="xAlmoxarifadoModel8StoreContainer" CdmEntityContainer="xAlmoxarifadoEntities8">
+    <EntitySetMapping Name="EMPRESA">
+      <EntityTypeMapping TypeName="xAlmoxarifadoModel8.EMPRESA">
+        <MappingFragment StoreEntitySet="EMPRESA">
+          <ScalarProperty Name="ID_EMPRESA" ColumnName="ID_EMPRESA" />
+          <ScalarProperty Name="NOME_EMPRESA" ColumnName="NOME_EMPRESA" />
+          <ScalarProperty Name="ENDERECO_EMPRESA" ColumnName="ENDERECO_EMPRESA" />
+          <ScalarProperty Name="BAIRRO_EMPRESA" ColumnName="BAIRRO_EMPRESA" />
+          <ScalarProperty Name="CIDADE_EMPRESA" ColumnName="CIDADE_EMPRESA" />
+          <ScalarProperty Name="UF_EMPRESA" ColumnName="UF_EMPRESA" />
+          <ScalarProperty Name="CEP_EMPRESA" ColumnName="CEP_EMPRESA" />
+          <ScalarProperty Name="CNPJ_EMPRESA" ColumnName="CNPJ_EMPRESA" />
+          <ScalarProperty Name="FONE_EMRESA" ColumnName="FONE_EMRESA" />
+          <ScalarProperty Name="LOGO_EMPRESA" ColumnName="LOGO_EMPRESA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

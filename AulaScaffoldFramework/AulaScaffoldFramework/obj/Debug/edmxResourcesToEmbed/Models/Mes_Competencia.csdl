@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="xAlmoxarifadoModel9" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="MES_COMPETENCIA">
+    <Key>
+      <PropertyRef Name="MES" />
+      <PropertyRef Name="ANO" />
+    </Key>
+    <Property Name="MES" Type="Int32" Nullable="false" />
+    <Property Name="ANO" Type="Int32" Nullable="false" />
+    <Property Name="ABERTO" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="xAlmoxarifadoEntities9" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="MES_COMPETENCIA" EntityType="Self.MES_COMPETENCIA" />
+  </EntityContainer>
+</Schema>

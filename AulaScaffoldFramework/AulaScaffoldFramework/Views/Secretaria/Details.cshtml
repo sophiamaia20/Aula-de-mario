@@ -1,0 +1,58 @@
+﻿@model AulaScaffoldFramework.Models.SECRETARIA
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>SECRETARIA</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NOME_SEC)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NOME_SEC)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ENDRECO_SEC)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ENDRECO_SEC)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BAIRRO_SEC)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BAIRRO_SEC)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EMAIL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EMAIL)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TEL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TEL)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID_SEC }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,39 @@
+﻿@model IEnumerable<AulaScaffoldFramework.Models.SUBGRUPO>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ID_GRU)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NOME_SUB_GRU)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ID_GRU)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NOME_SUB_GRU)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID_SUB_GRU }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID_SUB_GRU }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID_SUB_GRU })
+        </td>
+    </tr>
+}
+
+</table>

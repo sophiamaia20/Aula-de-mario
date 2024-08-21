@@ -1,0 +1,33 @@
+﻿@model IEnumerable<AulaScaffoldFramework.Models.TIPO_NOTA>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.DESCRICAO_TIPO_NOTA)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.DESCRICAO_TIPO_NOTA)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID_TIPO_NOTA }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID_TIPO_NOTA }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID_TIPO_NOTA })
+        </td>
+    </tr>
+}
+
+</table>

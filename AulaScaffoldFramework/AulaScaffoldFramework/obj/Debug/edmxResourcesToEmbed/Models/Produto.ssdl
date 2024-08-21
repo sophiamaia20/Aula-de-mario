@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="xAlmoxarifadoModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="PRODUTO">
+    <Key>
+      <PropertyRef Name="ID_PRO" />
+    </Key>
+    <Property Name="ID_PRO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ID_CLAS" Type="int" Nullable="false" />
+    <Property Name="ID_UN_MED" Type="int" Nullable="false" />
+    <Property Name="DESCRICAO" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="OBSERVACAO" Type="varchar" MaxLength="60" />
+    <Property Name="ESTOQUE_MIN" Type="int" />
+    <Property Name="PERECIVEL" Type="bit" />
+    <Property Name="QTD_EMBALAGEM" Type="int" />
+  </EntityType>
+  <EntityContainer Name="xAlmoxarifadoModelStoreContainer">
+    <EntitySet Name="PRODUTO" EntityType="Self.PRODUTO" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
